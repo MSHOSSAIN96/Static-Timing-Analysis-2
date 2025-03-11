@@ -150,6 +150,61 @@ In the next, we will open this timer file,
 cat my_netlist.timing
 
 
+**Section 2: Constraints creation commands for opentimer**
+
+
+**2.1 Clock creation and clock arrival time definitions**
+
+![Screenshot 2025-03-11 145902](https://github.com/user-attachments/assets/79180659-392c-4363-8d29-9f23a3e28584)
+
+1️⃣ Clock Definition & Duty Cycle
+
+A clock constraint defines the clock signal, including:
+
+Source: Where the clock originates.
+
+Period: The duration of one complete cycle.
+
+Duty Cycle: The percentage of time the clock signal stays high within one cycle.
+
+Example Explanation:
+
+The clock period is 1 nanosecond (1 ns).
+
+A 50% duty cycle means the clock stays high for 50% of the period and low for the remaining 50%.
+
+If the duty cycle were 30%, the clock would be high for 30% of the time and low for 70%.
+
+
+![Screenshot 2025-03-11 150419](https://github.com/user-attachments/assets/1740bd7b-da7a-49f9-8959-2d70270c5df0)
+
+2️⃣ Arrival Time Definition
+
+Arrival time is when a signal reaches a point in the circuit.
+
+Example Terms:
+
+Early rise arrival time: The earliest time a signal transition (0→1) occurs.
+
+Early fall arrival time: The earliest time a signal transition (1→0) occurs.
+
+Late rise arrival time: The latest time a signal transition (0→1) occurs.
+
+Late fall arrival time: The latest time a signal transition (1→0) occurs.
+
+Example in STA:
+
+The early rise arrival time is 0 ps (picoseconds), meaning the clock starts exactly at 0 ps.
+
+The late fall arrival time could be 50 ps, meaning that at most, the fall transition can occur 50 ps later.
+
+
+![Screenshot 2025-03-11 151133](https://github.com/user-attachments/assets/a861fd5a-fd3f-4d6c-927d-30c8a39d7a63)
+
+
+![Screenshot 2025-03-11 151519](https://github.com/user-attachments/assets/b2499d91-2d7a-4a14-8e69-9dca48ec78c3)
+
+
 
 
 
