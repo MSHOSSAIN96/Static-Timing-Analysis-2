@@ -134,5 +134,27 @@ Generating timing reports using design-report.
 
 ![Screenshot 2025-03-11 104121](https://github.com/user-attachments/assets/9afbab78-ff89-4a80-8402-01cc2e877ad6)
 
+There is a tcl file to work for opentimer. 
+
+**vim my_run.tcl**
+
+This command is used to open or create a file named my_run.tcl in the Vim text editor.
+
+
+In the follwoing section,  there will be a TCL script (my_run.tcl) used for OpenTimer, a tool for Static Timing Analysis (STA).
+
+![Screenshot 2025-03-11 132502](https://github.com/user-attachments/assets/f3e95e41-4732-4667-a46f-3c2135a0f6a6)
+
+In the next, we will open this timer file, 
+
+cat my_netlist.timing
+
+
+
+
+
+
+
+
 
 
